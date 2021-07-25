@@ -67,6 +67,7 @@ aws cloudformation create-stack --stack-name tkovpc-securitygroup --template-bod
 ```
 
 <br>
+
 ## 3. Create public instance with CFN template "vpc-public-instace.yaml"
 - [vpc-securitygroup.yaml](./Templates/vpc-public-instance.yaml)
 
