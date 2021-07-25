@@ -51,17 +51,17 @@ aws cloudformation create-stack --stack-name tkovpc --template-body file://vpc.y
 ## 2. Create Securitygroup with CFN template "vpc-securitygroup.yaml"
 - [vpc-securitygroup.yaml](./Templates/vpc-securitygroup.yaml)
 
-### i) `sgpvpc` security for "ap-southeast-1" 
+### i) `sgpvpc` security group for "ap-southeast-1" 
 ```bash
 aws cloudformation create-stack --stack-name sgpvpc-securitygroup --template-body file://vpc-securitygroup.yaml --parameters ParameterKey='vpcStackName',ParameterValue='sgpvpc' --region ap-southeast-1
 ```
 
-### ii) `sydvpc` security for "ap-southeast-2" 
+### ii) `sydvpc` security group for "ap-southeast-2" 
 ```bash
 aws cloudformation create-stack --stack-name sydvpc-securitygroup --template-body file://vpc-securitygroup.yaml --parameters ParameterKey='vpcStackName',ParameterValue='sydvpc' --region ap-southeast-2
 ```
 
-### iii) `tkovpc` security for "ap-northeast-1" 
+### iii) `tkovpc` security group for "ap-northeast-1" 
 ```bash
 aws cloudformation create-stack --stack-name tkovpc-securitygroup --template-body file://vpc-securitygroup.yaml --parameters ParameterKey='vpcStackName',ParameterValue='tkovpc' --region ap-northeast-1
 ```
