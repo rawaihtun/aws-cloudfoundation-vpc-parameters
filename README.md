@@ -85,8 +85,8 @@ aws cloudformation create-stack --stack-name sydvpc-public-instance --template-b
 
 ### iii) `tyovpc` public instance for "ap-northeast-1" 
 
-You may need to change image-id that availble on your different region. 
 ```bash
 aws cloudformation create-stack --stack-name tyovpc-public-instance --template-body file://vpc-public-instance.yaml --parameters ParameterKey='vpcsecurityGroupStackName',ParameterValue='tkovpc-securitygroup' ParameterKey='vpcStackName',ParameterValue='tkovpc' --region ap-northeast-1
 ```
+You may need to update image-id that availble on your different region.
 ![header image](outputs-images/instance-imageid-err-01.png)
