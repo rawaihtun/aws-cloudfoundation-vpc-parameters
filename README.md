@@ -27,7 +27,7 @@ tkovpc - 10.10.0.0/16
 # Steps: 
 
 ## 1. Create common VPC teamplate and deploy in mulitples region (sg, syd, tokyo)
-- [vpc.yaml](./vpc.yaml)
+- [vpc.yaml](./Templates/vpc.yaml)
 
 ### i) `sgpvpc` for "ap-southeast-1" 
 
